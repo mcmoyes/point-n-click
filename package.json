@@ -1,0 +1,24 @@
+{
+  "name": "point-n-click",
+  "version": "0.0.1",
+  "description": "point n click controllers for touch, mouse and keyboard",
+  "main": "entry.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^3.8.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.tvo.org:ilcdcc/point-n-click.git"
+  },
+  "author": "Mark Moyes",
+  "license": "ISC"
+}
