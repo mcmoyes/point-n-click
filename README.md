@@ -8,7 +8,7 @@ Emits events when an item is selected, dragged, and dropped (or combined with a 
 
 ## Install
 
-Use the distribution file at `https://dcc.ilc.org/point-n-click/dist/point-n-click.js` 
+Use the distribution file at `dist/point-n-click.js` 
 or build:
 
 ```
@@ -42,7 +42,7 @@ You can also specify options in the selectController:
 ```javascript
 var options = {
 	itemFilterFn: function(selectedItem) {},
-	itemClass: string, // a class that identifies all dom elements which will
+	itemClass: string, // a css class that identifies all dom elements which will
 					   // be either selectables or targets
 	selectables: [domEl, domEl, ...] || selector (string),
 	targets: [domEl, domEl, ...] || selector (string),

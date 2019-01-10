@@ -1,13 +1,20 @@
 /* Select Controller
 
 options = {
-	selectables: [domEl, domEl, ...] || selector (string)
-	targets: [domEl, domEl, ...] || selector (string)
+	itemFilterFn: function(selectedItem) {},
+	itemClass: string, // a css class that identifies all dom elements which will
+					   // be either selectables or targets
+	selectables: [domEl, domEl, ...] || selector (string),
+	targets: [domEl, domEl, ...] || selector (string),
+	registerElsOnInit: bool // you can register elements yourself if you've got
+							// fancy criteria. (otherwise, this will run registerEl()
+							// on all elements with itemClass, which enables
+							// selectables and disables targets.
 }
 
 TODO: the problem with allowing an array of dom elements is that you have to
 update the array if any elements get added/removed. There's currently no mechanism
-for that.
+for that. 
 */
 
 import { dsMessager } from './dsMessager.js'
